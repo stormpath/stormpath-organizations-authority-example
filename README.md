@@ -107,8 +107,8 @@ The `@Component` annotation ensure that this will be exposed as a `Bean`. By def
 be the class name, camel-cased. Thus, `orgs` is the bean name.
 
 Spring automatically converts all-caps and underlined environment variables to the lowercase dotted form.
-This way, they environment properties can come from the system environment (as shown above) or from the 
-`application.properties` file in your project.
+This way, the environment properties can come from the system environment (in all caps as shown above) or from the 
+`application.properties` (as dotted lowercase) file in your project.
 
 This, `@orgs.USER` resolves to the `href` of the Stormpath Organization passed in on the command line as a
 system environment variable.
