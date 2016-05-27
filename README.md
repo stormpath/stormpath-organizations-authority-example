@@ -110,5 +110,5 @@ Spring automatically converts all-caps and underlined environment variables to t
 This way, the environment properties can come from the system environment (in all caps as shown above) or from the 
 `application.properties` (as dotted lowercase) file in your project.
 
-This, `@orgs.USER` resolves to the `href` of the Stormpath Organization passed in on the command line as a
+Thus, `@orgs.USER` resolves to the `href` of the Stormpath Organization passed in on the command line as a
 system environment variable.
