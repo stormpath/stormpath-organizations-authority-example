@@ -16,11 +16,13 @@ Finally, Map the two Organizations to your Stormpath Application.
 
 ### Build
 
-`mvn clean package`
+```bash
+mvn clean package
+```
 
 ### Run
 
-```
+```bash
 STORMPATH_API_KEY_FILE=<path to apiKey.properties> \
 STORMPATH_APPLICATION_HREF=<full href to Stormpath Application> \
 STORMPATH_AUTHORIZED_ORG_USER=<full href to Stormpath Organization for Admins> \
@@ -35,7 +37,7 @@ Authorities.
 
 Here's what this looks like:
 
-```
+```java
 @Configuration
 public class AccountGrantedAuthorityConfig {
 
@@ -67,7 +69,7 @@ set represents the `href` of the Stormpath Organization that Stormpath Account b
 The `OrgService` class has methods that cannot be entered unless the logged in user belongs to a certain
 Organization:
 
-```
+```java
 @Service
 public class OrgService {
 
@@ -87,7 +89,7 @@ for a `Bean`.
 
 If you look at the `Orgs` class you can see what's going on:
 
-```
+```java
 @Component
 public class Orgs {
     public final String USER;
